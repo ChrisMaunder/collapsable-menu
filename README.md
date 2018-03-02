@@ -16,7 +16,7 @@ we wanted to keep it all on a single line, and have any overflow items appear in
 
 Simply setup your menu as such:
 
-```
+```html
 <ul class="collapse-menu">
 	<li class="menu-item">Long Item 1</li>
 	<li class="menu-item">Item 2</li>
@@ -38,7 +38,7 @@ It's just not designed that that type of application.
 Simply copy the .js and .css files into a handy directory and reference them from your HTML page. 
 You'll need to ensure you have jQuery included as well:
 
-```
+```html
 <html>
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -46,7 +46,7 @@ You'll need to ensure you have jQuery included as well:
 <link type="text/css" rel="stylesheet" href="collapse-menu.min.css">
 </head>
 <body>
-...
+```
 
 ## Contributing
 
