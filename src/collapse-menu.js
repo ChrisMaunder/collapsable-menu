@@ -12,7 +12,7 @@
     /*
      * Utility functions
      */
- 
+
     var adjustSize = function () {
 
         var $mainMenu    = $('.collapse-menu');
@@ -52,6 +52,8 @@
                 var width     = parseFloat($button.outerWidth(true));
                 currentWidth += width;
 
+                currentWidth = parseFloat($button.position().left) + parseFloat($button.outerWidth(true));
+
                 // We've hit the limit of what we can fit it. Add a overflow and prepare for overflow
                 // Note that for the first n-1 items we need to also ensure we have room for the "..."
                 // button. For the last item we'll only add a overflow if we exceed the full space 
@@ -80,10 +82,15 @@
     
 
     var initialise = function () {
-        adjustSize();
-    };
 
-    var redoLayout = function () {
+        // Push the menu items off the main menu onto the end of the main menu. The effect of this
+        // is to remove any whitespace between items
+        var $mainMenu = $('.collapse-menu');
+        var $menuItems = $mainMenu.children('.menu-item');
+        $menuItems.each(function (index) {
+            $(this).appendTo($mainMenu); // pop the items back onto the main menu
+        });
+
         adjustSize();
     };
 
@@ -110,10 +117,10 @@
     // resize function
     $(window).resize(function () {
 
-        redoLayout();
+        adjustSize();
 
         waitForFinalEvent(function () {
-            redoLayout();
+            adjustSize();
         }, 200, "finished resizing");
     });
 

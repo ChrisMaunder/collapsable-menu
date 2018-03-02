@@ -1,8 +1,8 @@
 <html>
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="collapse-menu.js"></script>
-<link type="text/css" rel="stylesheet" href="collapse-menu.css">
+<script type="text/javascript" src="../src/collapse-menu.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../src/collapse-menu.min.css">
 
 <style type="text/css">
 * { font-family: Segoe UI, san serif; font-size:13px; }
@@ -10,12 +10,12 @@
 /* Your custom styling */
 #my-menu .menu-item
 {	
-	font-size:   13px; /* Important: this restores font size after setting it to 0 to remove space between LI items */
-
-	padding:     3px 10px; 
-	margin:      0 5px;
 	min-width:   50px; 
 	border:      1px #f90 solid;
+}
+#my-menu .collapse-overflow .collapse-overflow-menu li
+{
+    border: 0;
 }
 #my-menu .menu-anchor
 {
@@ -23,8 +23,7 @@
 }
 #my-menu .collapse-overflow .collapse-overflow-menu 
 {
-	padding:     3px;
-	border:      1px #f90 solid;
+	border: 1px #f90 solid;
 }
 #my-menu .menu-item:hover, 
 #my-menu .collapse-overflow:hover .collapse-overflow-anchor
@@ -32,13 +31,6 @@
 	background-color: #f90;
 	color:            white;
 }
-#my-menu .collapse-overflow:hover .collapse-overflow-menu li
-{
-	padding:     10px;
-	text-align:  left;
-	border:      0;
-}
-
 </style>
 
 </head>

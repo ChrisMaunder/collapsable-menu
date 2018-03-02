@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "collapse-menu.min.css",
+    "inputFiles": [
+      "collapse-menu.css"
+    ]
+  },
+  {
+    "outputFileName": "collapse-menu.min.js",
+    "inputFiles": [
+      "collapse-menu.js"
+    ]
+  }
+]

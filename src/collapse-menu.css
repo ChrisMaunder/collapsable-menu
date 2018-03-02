@@ -6,10 +6,10 @@
 	border:      0;
     white-space: nowrap;
     width:       100%;
-    font-size:   0;	/* removes space between LI items */
 	position:    relative;
 }
-.collapse-menu .menu-item, .collapse-menu .collapse-overflow-anchor
+.collapse-menu .menu-item, 
+.collapse-menu .collapse-overflow-anchor
 { 
 	display:         inline-block; 
 	list-style-type: none;
@@ -23,31 +23,21 @@
 	display:  inline-block; 
 	position: relative;
 }
-.collapse-menu .collapse-overflow-menu 
-{
-    display:  none;
-    opacity:  0;
-    position: absolute;
-	list-style-type: none;
-
-    -webkit-transition: opacity .2s linear 0ms;
-    -moz-transition:    opacity .2s linear 0ms;
-    -o-transition:      opacity .2s linear 0ms;
-    transition:         opacity .2s linear 0ms;
-}
 .collapse-menu .collapse-overflow .collapse-overflow-menu 
 {
-	padding:     3px;
-	border:      1px #ccc solid;
+    display:         none;	
+    position:        absolute;
+	list-style-type: none;
+	padding:         1px 0;
+	border:          1px #ccc solid;
 }
 .collapse-menu .collapse-overflow:hover .collapse-overflow-menu 
 {
     display:  block;	
-	opacity:  1;
 }
-.collapse-menu .collapse-overflow:hover .collapse-overflow-menu li
+.collapse-menu .collapse-overflow .collapse-overflow-menu li
 {
     display:    list-item;	
-	padding:    10px;
 	text-align: left;
+    border:     0;
 }
