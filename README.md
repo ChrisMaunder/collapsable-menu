@@ -7,7 +7,7 @@ width.
 
 For example, consider the menu 
 
-![wide menu](https://github.com/ChrisMaunder/collapsable-menu/raw/master/Images/Menu1.PNG "Wide menu")
+![wide menu](https://github.com/ChrisMaunder/collapsable-menu/raw/master/Images/menu1.PNG "Wide menu")
 
 This is fine on a wide screen, but on a narrow screen you either chop off items or wrap. What if
 we wanted to keep it all on a single line, and have any overflow items appear in a dropdown:
