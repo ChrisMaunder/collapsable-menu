@@ -7,16 +7,16 @@ width.
 
 For example, consider the menu 
 
-![wide menu](https://github.com/ChrisMaunder/collapsable-menu/raw/master/images/menu1.png "Wide menu")
+![wide menu](https://github.com/ChrisMaunder/collapsable-menu/raw/master/Images/Menu1.PNG "Wide menu")
 
 This is fine on a wide screen, but on a narrow screen you either chop off items or wrap. What if
 we wanted to keep it all on a single line, and have any overflow items appear in a dropdown:
 
-![narrow menu](https://github.com/ChrisMaunder/collapsable-menu/raw/master/images/menu2.png "Narrow menu")
+![narrow menu](https://github.com/ChrisMaunder/collapsable-menu/raw/master/Images/Menu2.PNG "Narrow menu")
 
 Simply setup your menu as such:
 
-```html
+```
 <ul class="collapse-menu">
 	<li class="menu-item">Long Item 1</li>
 	<li class="menu-item">Item 2</li>
@@ -38,7 +38,7 @@ It's just not designed that that type of application.
 Simply copy the .js and .css files into a handy directory and reference them from your HTML page. 
 You'll need to ensure you have jQuery included as well:
 
-```html
+```
 <html>
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -47,7 +47,6 @@ You'll need to ensure you have jQuery included as well:
 </head>
 <body>
 ...
-</body>
 
 ## Contributing
 
