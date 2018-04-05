@@ -1,14 +1,14 @@
 [
   {
-    "outputFileName": "collapse-menu.min.css",
+    "outputFileName": "src/collapse-menu.min.css",
     "inputFiles": [
-      "collapse-menu.css"
+      "src/collapse-menu.css"
     ]
   },
   {
-    "outputFileName": "collapse-menu.min.js",
+    "outputFileName": "src/collapse-menu.min.js",
     "inputFiles": [
-      "collapse-menu.js"
+      "src/collapse-menu.js"
     ]
   }
 ]

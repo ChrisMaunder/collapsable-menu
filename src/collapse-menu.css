@@ -4,40 +4,71 @@
 	padding:     0;
 	margin:      0;
 	border:      0;
-    white-space: nowrap;
     width:       100%;
 	position:    relative;
 }
+
 .collapse-menu .menu-item, 
 .collapse-menu .collapse-overflow-anchor
-{ 
-	display:         inline-block; 
-	list-style-type: none;
-	padding:         3px 10px; 
-	margin:          0 5px;
-	font-weight:     bold;	
-	text-align:      center;	
+ { 
+    display: inline-flex; 
+    margin:  0 10px 0 0;
+ }
+
+.collapse-menu .menu-item a, 
+.collapse-menu .menu-anchor
+{
+    text-decoration:none; 
+
+    padding:     3px 10px;
+    font-weight: bold;
+    text-align:  center;
+    border:      1px #ccc solid;
 }
+
+.collapse-menu .menu-item:hover a, 
+.collapse-menu .menu-item.selected,
+.collapse-menu .menu-item.selected a
+{
+	background-color: #333;
+	color:            white; 
+}
+
 .collapse-menu .collapse-overflow 
 { 
-	display:  inline-block; 
+    display:  inline-block; 
 	position: relative;
 }
+
 .collapse-menu .collapse-overflow .collapse-overflow-menu 
 {
-    display:         none;	
-    position:        absolute;
-	list-style-type: none;
-	padding:         1px 0;
-	border:          1px #ccc solid;
+    display:          none;	
+    position:         absolute;
+    white-space:      nowrap;
+    z-index:          10000;
+
+	padding:          1px 0;
+	border:           1px #ccc solid; 
+    background-color: white;
 }
+
+.collapse-menu .collapse-overflow .collapse-overflow-menu .menu-item 
+{
+    display:  block;
+    margin:   0;
+}
+
+.collapse-menu .collapse-overflow .collapse-overflow-menu .menu-item a
+{
+    display:     block;	
+    text-align:  left;
+    border:      0;
+    line-height: 1.6em;
+}
+
 .collapse-menu .collapse-overflow:hover .collapse-overflow-menu 
 {
-    display:  block;	
-}
-.collapse-menu .collapse-overflow .collapse-overflow-menu li
-{
-    display:    list-item;	
-	text-align: left;
-    border:     0;
+    display: block;
+    
+    right:   11px;
 }

@@ -1,55 +1,48 @@
 <html>
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script type="text/javascript" src="../src/collapse-menu.min.js"></script>
 <link type="text/css" rel="stylesheet" href="../src/collapse-menu.min.css">
 
 <style type="text/css">
+
 * { font-family: Segoe UI, san serif; font-size:13px; }
 
 /* Your custom styling */
-#my-menu .menu-item
-{	
-	min-width:   50px; 
-	border:      1px #f90 solid;
-}
-#my-menu .collapse-overflow .collapse-overflow-menu li
-{
-    border: 0;
-}
-#my-menu .menu-anchor
-{
-	min-width:   0px; 
-}
-#my-menu .collapse-overflow .collapse-overflow-menu 
-{
-	border: 1px #f90 solid;
-}
-#my-menu .menu-item:hover, 
-#my-menu .collapse-overflow:hover .collapse-overflow-anchor
+
+#my-menu .menu-item:hover a, 
+#my-menu .menu-item.selected,
+#my-menu .menu-item.selected a
 { 
 	background-color: #f90;
-	color:            white;
+	color:            white; 
+}
+
+#my-menu .collapse-overflow .collapse-overflow-menu 
+{
+	border:           1px #f90 solid; 
+    background-color: white;
 }
 </style>
 
 </head>
 <body>
 
-<ul id="my-menu" class="collapse-menu">
-	<li class="menu-item">Long Item 1</li>
-	<li class="menu-item">Item 2</li>
-	<li class="menu-item">Extremely Long Item 3</li>
-	<li class="menu-item">Item 4</li>
-	<li class="menu-item">Item 5</li>
-	<li class="menu-item">Medium Item 6</li>
-	<li class="menu-item">Item 7</li>
-	<li class="menu-item">Longer Item 8</li>
-	<li class="menu-item">Item 9</li>
-	<li class="menu-item">A really long Item 10</li>
-	<li class="menu-item">Item 11</li>
-	<li class="menu-item">Item 12</li>
-	<li class="menu-item">A really, really long Item 13</li>
-</ul>
+<div id="my-menu" class="collapse-menu" data-promoted-class="selected">
+	<div class="menu-item"><a href="#">Long Item 1</a></div>
+    <div class="menu-item"><a href="#">Item 2</a></div>
+    <div class="menu-item"><a href="#">Extremely Long Item 3</a></div>
+    <div class="menu-item"><a href="#">Item 4</a></div>
+    <div class="menu-item"><a href="#">Item 5</a></div>
+    <div class="menu-item selected"><a href="#">Medium Item 6</a></div>
+    <div class="menu-item"><a href="#">Item 7</a></div>
+    <div class="menu-item"><a href="#">Longer Item 8</a></div>
+    <div class="menu-item"><a href="#">Item 9</a></div>
+    <div class="menu-item"><a href="#">A really long Item 10</a></div>
+    <div class="menu-item"><a href="#">Item 11</a></div>
+    <div class="menu-item"><a href="#">Item 12</a></div>
+    <div class="menu-item"><a href="#">A really, really long Item 13</a></div>
+</div>
 
 </body>
