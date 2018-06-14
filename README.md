@@ -18,7 +18,7 @@ Simply setup your menu as such:
 
 ```html
 <div class="collapse-menu">
-	<div class="menu-item"><a href="#">Long Item 1</a></div>
+    <div class="menu-item"><a href="#">Long Item 1</a></div>
     <div class="menu-item"><a href="#">Item 2</a></div>
     <div class="menu-item"><a href="#">Extremely Long Item 3</a></div>
     <div class="menu-item"><a href="#">Item 4</a></div>
@@ -40,7 +40,7 @@ For example
 
 ```html
 <div class="collapse-menu" data-promoted-class="selected">
-	<div class="menu-item"><a href="#">Long Item 1</a></div>
+    <div class="menu-item"><a href="#">Long Item 1</a></div>
     <div class="menu-item"><a href="#">Item 2</a></div>
     <div class="menu-item"><a href="#">Extremely Long Item 3</a></div>
     <div class="menu-item selected"><a href="#">Item 4</a></div>
@@ -77,7 +77,3 @@ Feel free to improve the menu and send a pull request. The code itself is inside
 2017 solution simply to enable CSS and Javascript minification using Mads' minifier addin. The
 actual code is in the src directory and can be used as-is in whatever editor and environment you
 wish.
-
-## License
-
-Code released under the [Apache 2.0 licence](http://www.apache.org/licenses).
