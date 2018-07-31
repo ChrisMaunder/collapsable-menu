@@ -15,6 +15,14 @@
     margin:  0 10px 0 0;
  }
 
+/* Hack to fix issue with Safari 5 (no flex, so outerWidth is wrong */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari only override */
+    ::i-block-chrome,.collapse-menu .menu-item,.collapse-menu .collapse-overflow-anchor {
+        display: inline-block; 
+    }
+}
+
 .collapse-menu .menu-item a, 
 .collapse-menu .menu-anchor
 {
