@@ -30,6 +30,7 @@ the "selected" class added to it.
 */
 
 ; (function (window, $, undefined) {
+
     'use strict';
 
     /*
